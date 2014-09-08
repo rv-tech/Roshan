@@ -1,0 +1,16 @@
+.errorMessage {
+   color: #FF0000;
+}
+.successMessage{
+       color:green;
+}
+.mypic {
+    float: right;
+    margin: 90px 0 0;
+}
+.required {
+    width: 100px !important;
+}
+input[id="newpass"] {
+    margin-left: 30px !important;
+}
