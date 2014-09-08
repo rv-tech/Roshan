@@ -1,0 +1,454 @@
+2014/08/28 18:28:13 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/tvmatches.com/public_html/tvshows/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/tvmatc...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CClientScript.php(510): CAssetManager->publish('/var/www/tvmatc...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CClientScript.php(547): CClientScript->getCoreScriptUrl()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CClientScript.php(348): CClientScript->getPackageBaseUrl('jquery')
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/SiteController.php(73): CController->render('contact', Array)
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/site/contact
+HTTP_REFERER=http://tvmatches.com/index.php/site/page?view=about
+---
+2014/08/29 08:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/css/style.css
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.min.js".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.mi...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/js/bootstrap.min.js
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/logo.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/logo.jpg')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/logo.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/flag.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/flag.jpg')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/flag.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/round-icon.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/round-ico...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/round-icon.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/plus-icon.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/plus-icon...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/plus-icon.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/ug-tv.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/ug-tv.jpg')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/ug-tv.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/trt-3sport.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/trt-3spor...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/trt-3sport.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/yellow-icon.jpg".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/yellow-ic...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/yellow-icon.jpg
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:06:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "image/footer_logo.png".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('image/footer_lo...')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/image/footer_logo.png
+HTTP_REFERER=http://tvmatches.com/index.php/front
+---
+2014/08/29 08:46:05 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.0" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/YiiBase.php(220): CComponent->__set('0', Array)
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(522): CModule->getComponent('urlManager')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(140): CApplication->getUrlManager()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2014/08/29 09:06:56 [error] [php] include(Sports.php): failed to open stream: No such file or directory (/var/www/tvmatches.com/public_html/yii_framework/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(395): spl_autoload_call()
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(182): model()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(230): CActiveFinder->getModel()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(296): CActiveFinder->buildJoinTree()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(909): CActiveFinder->__construct()
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(1355): TvMatches->getActiveFinder()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(1470): TvMatches->query()
+#8 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(32): TvMatches->findAll()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (32)
+in /var/www/tvmatches.com/public_html/tvshows/index.php (13)
+2014/08/29 09:09:08 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "channle" is not defined in active record class "TvMatches".' in /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php:226
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'channle')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(TvMatches), Array)
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(32): CActiveRecord->findAll()
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/
+---
+2014/08/29 09:35:21 [error] [exception.CException] exception 'CException' with message 'Property "TvMatches.TvMatches" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('TvMatches')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CModel.php(596): CActiveRecord->__get('TvMatches')
+#2 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(35): CModel->offsetGet('TvMatches')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2014/08/29 09:50:56 [error] [php] Undefined variable: date (/var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php:38)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (38)
+in /var/www/tvmatches.com/public_html/tvshows/index.php (13)
+2014/08/29 10:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "front".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/08/29 10:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(270): CController->missingAction('js')
+#1 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('js')
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/bootst...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/front/js/bootstrap.min.js
+HTTP_REFERER=http://tvmatches.com/index.php/front/index
+---
+2014/08/29 12:09:06 [error] [php] Invalid argument supplied for foreach() (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:09:35 [error] [php] Invalid argument supplied for foreach() (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:14:15 [error] [php] Undefined variable: model (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:15:13 [error] [php] Undefined variable: model (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:15:57 [error] [php] Undefined variable: model (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:16:02 [error] [php] Undefined variable: model (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:17:29 [error] [php] Undefined variable: data (/var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php:1)
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): FrontController->renderPartial()
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): FrontController->renderInternal()
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): FrontController->renderFile()
+#5 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): FrontController->renderPartial()
+#6 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): FrontController->render()
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): FrontController->runAction()
+#10 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): FrontController->runActionWithFilters()
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): FrontController->run()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php (1)
+in /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php (68)
+in /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php (36)
+2014/08/29 12:32:13 [error] [exception.CException] exception 'CException' with message 'Property "TvMatches.logo" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('logo')
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php(11): CActiveRecord->__get('logo')
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#5 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): CController->renderPartial('_ajaxFilter', Array)
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): CController->render('index', Array)
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+---
+2014/08/29 12:35:54 [error] [exception.CException] exception 'CException' with message 'Property "TvMatches.sports" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sports')
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php(11): CActiveRecord->__get('sports')
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#5 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): CController->renderPartial('_ajaxFilter', Array)
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): CController->render('index', Array)
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+---
+2014/08/29 12:35:58 [error] [exception.CException] exception 'CException' with message 'Property "TvMatches.sports" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sports')
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php(11): CActiveRecord->__get('sports')
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#5 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): CController->renderPartial('_ajaxFilter', Array)
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): CController->render('index', Array)
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+---
+2014/08/29 12:41:43 [error] [exception.CException] exception 'CException' with message 'Property "TvMatches.channel1" is not defined.' in /var/www/tvmatches.com/public_html/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/tvmatches.com/public_html/yii_framework/framework/db/ar/CActiveRecord.php(145): CComponent->__get('channel1')
+#1 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/_ajaxFilter.php(31): CActiveRecord->__get('channel1')
+#2 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#3 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#4 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#5 /var/www/tvmatches.com/public_html/tvshows/protected/views/front/index.php(68): CController->renderPartial('_ajaxFilter', Array)
+#6 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(126): require('/var/www/tvmatc...')
+#7 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/tvmatc...', Array, true)
+#8 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/tvmatc...', Array, true)
+#9 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#10 /var/www/tvmatches.com/public_html/tvshows/protected/controllers/FrontController.php(36): CController->render('index', Array)
+#11 /var/www/tvmatches.com/public_html/yii_framework/framework/web/actions/CInlineAction.php(49): FrontController->actionIndex()
+#12 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#16 /var/www/tvmatches.com/public_html/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /var/www/tvmatches.com/public_html/yii_framework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/tvmatches.com/public_html/tvshows/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+---
